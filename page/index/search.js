@@ -9,7 +9,7 @@ Page({
 	},
 	onLoad: function () {
 		var self = this;
-		wx.getLocation({
+		wx.getFuzzyLocation({
 			type: 'gcj02',
 			success: function (res) {
 				var latitude = res.latitude;
